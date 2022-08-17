@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(90deg, rgb(243, 81, 208) 0%, rgba(73, 63, 252, 1) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+ nav ul li {
+   display: inline;
+   padding: 0 20px;
+   border: 1px solid White;
+   margin: 20px;
+   text-decoration: none;
+   background: white;
+   color:blueviolet;
+   border-radius: 10px;
+   transition:  all 0.3s  ease-out;
+ }
+  ul li:hover {
+   background: blueviolet;
+   
+ }
+ a{
+  color:blueviolet;
+  text-decoration: none;
+ }
+ a:hover{
+   color:white;
+   cursor: pointer;
+ }
+ input {
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  top: 55px;
+  border-radius: 10px;
+}
+  
+ 
+ footer{
+   width: 100%;
+   height: 80px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background-color: blanchedalmond;
+   text-align: center;
+   color: blueviolet;
+ }
+
+ footer a {
+   margin: 20px;
+ }
+ footer a:hover{
+   color:black;
+ }
+ 
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: transparent;
+  position: absolute;
+  top: 200px;
+  left:20px;
+
+}
+main img {
+  width: 300px;
+  height: 300px;
+  
+}
+main input{
+  position: absolute;
+  top: 10px;
+}
+
+@media screen and (max-width: 660px) {
+
+.header {
+    position: relative;
+  }
+
+  .nav  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s  ease;
+  };
+
+  .nav a {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    
+  }
+  ul{
+    left: 0;
+  }
+  
+  main{
+    position: absolute;
+    top: 200px;
+    left:0;
+    width:100%;
+  }
+  /* .search{
+    position: absolute;
+    top: 0;
+  } */
+  footer{
+    position: absolute;
+    top: 80px;
+  }
+};
